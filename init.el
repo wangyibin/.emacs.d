@@ -138,7 +138,7 @@ files are placed.
 (require 'setup-yasnippet)
 (require 'setup-autocomplete)
 ;;(require 'setup-perspective)
-;;(require 'setup-ffip)
+(require 'setup-ffip)
 ;;(require 'setup-html-mode)
 ;;(require 'setup-paredit)
 
@@ -213,7 +213,7 @@ files are placed.
 (smex-initialize)
 
 ;; Setup key bindings
-;; (require 'key-bindings)
+(require 'key-bindings)
 
 ;; Misc
 ;; (require 'project-archetypes)
