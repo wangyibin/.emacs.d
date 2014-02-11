@@ -83,8 +83,8 @@
 ;; (global-set-key (kbd "s-Z") (lambda (char) (interactive "cZap to char backwards: ") (zap-to-char -1 char)))
 
 ;; ;; iy-go-to-char - like f in Vim
-;; (global-set-key (kbd "M-m") 'jump-char-forward)
-;; (global-set-key (kbd "M-M") 'jump-char-backward)
+(global-set-key (kbd "C-c C-f") 'jump-char-forward)
+(global-set-key (kbd "C-c C-b") 'jump-char-backward)
 ;; (global-set-key (kbd "s-m") 'jump-char-backward)
 
 ;; ;; vim's ci and co commands

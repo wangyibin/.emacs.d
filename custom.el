@@ -6,9 +6,12 @@
  '(ac-delay 0.5)
  '(ac-use-quick-help nil)
  '(custom-enabled-themes (quote (misterioso)))
+ '(dired-use-ls-dired nil)
  '(global-linum-mode t)
  '(ido-use-faces nil)
+ '(indent-tabs-mode t)
  '(save-place t nil (saveplace))
+ '(standard-indent 2)
  '(vc-make-backup-files t))
 
 (custom-set-faces

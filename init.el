@@ -99,7 +99,8 @@ files are placed.
      smex
      eproject
      fill-column-indicator
-     auto-complete)))
+     auto-complete
+     ace-jump-mode)))
 
 (condition-case nil
     (init--install-packages)
@@ -141,6 +142,8 @@ files are placed.
 (require 'setup-ffip)
 ;;(require 'setup-html-mode)
 ;;(require 'setup-paredit)
+(require 'setup-acejump)
+
 
 (require 'prodigy)
 (global-set-key (kbd "C-x M-m") 'prodigy)
