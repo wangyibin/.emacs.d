@@ -1,3 +1,12 @@
+;; Move more quickly
+(global-set-key (kbd "C-S-n") (λ (ignore-errors (next-line 5))))
+(global-set-key (kbd "C-S-p") (λ (ignore-errors (previous-line 5))))
+(global-set-key (kbd "C-S-f") (λ (ignore-errors (forward-char 5))))
+(global-set-key (kbd "C-S-b") (λ (ignore-errors (backward-char 5))))
+
+(global-unset-key (kbd "C-S-o"))
+(global-set-key (kbd "C-S-o") 'other-window)
+
 ;; I don't need to kill emacs that easily
 ;; the mnemonic is C-x REALLY QUIT
 ;; (global-set-key (kbd "C-x r q") 'save-buffers-kill-terminal)
@@ -83,8 +92,8 @@
 ;; (global-set-key (kbd "s-Z") (lambda (char) (interactive "cZap to char backwards: ") (zap-to-char -1 char)))
 
 ;; ;; iy-go-to-char - like f in Vim
-(global-set-key (kbd "C-c C-f") 'jump-char-forward)
-(global-set-key (kbd "C-c C-b") 'jump-char-backward)
+(global-set-key (kbd "C-; C-f") 'jump-char-forward)
+(global-set-key (kbd "C-; C-b") 'jump-char-backward)
 ;; (global-set-key (kbd "s-m") 'jump-char-backward)
 
 ;; ;; vim's ci and co commands
