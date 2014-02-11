@@ -10,6 +10,7 @@
  '(global-linum-mode t)
  '(ido-use-faces nil)
  '(indent-tabs-mode t)
+ '(make-backup-files nil)
  '(save-place t nil (saveplace))
  '(standard-indent 2)
  '(vc-make-backup-files t))

@@ -6,8 +6,8 @@ files are placed.
   Note that this should end with a directory separator.
   See also `locate-user-emacs-file'."))
   
-(setq url-proxy-services '(("no_proxy" . "work\\.com")
-    ("http" . "127.0.0.1:8087")))
+;; (setq url-proxy-services '(("no_proxy" . "work\\.com")
+;;    ("http" . "127.0.0.1:8087")))
 
 
 ;; No splash screen please ... jeez

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: mocha describe
+# key: mdc
+# --
+'use strict';
+
+var assert = require("assert");
+
+describe('$1', function() {
+  describe('#$2($3)', function() {
+    it('should $4 when $5', function() {
+      $0
+    });
+  });
+});
