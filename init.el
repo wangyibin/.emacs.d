@@ -6,8 +6,8 @@ files are placed.
   Note that this should end with a directory separator.
   See also `locate-user-emacs-file'."))
   
-;; (setq url-proxy-services '(("no_proxy" . "work\\.com")
-;;    ("http" . "127.0.0.1:8087")))
+(setq url-proxy-services '(("no_proxy" . "work\\.com")
+   ("http" . "127.0.0.1:8087")))
 
 
 ;; No splash screen please ... jeez
@@ -41,8 +41,15 @@ files are placed.
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups")))))
 
+;; fix to get smooth scrolling in emacs
+(setq redisplay-dont-pause t
+      scroll-margin 1
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
+
 ;; Make backups of files, even when they're in version control
-(setq vc-make-backup-files t)
+;; (setq vc-make-backup-files t)
 
 ;; Save point position between sessions
 (require 'saveplace)
@@ -100,7 +107,8 @@ files are placed.
      eproject
      fill-column-indicator
      auto-complete
-     ace-jump-mode)))
+     ace-jump-mode
+     jade-mode)))
 
 (condition-case nil
     (init--install-packages)

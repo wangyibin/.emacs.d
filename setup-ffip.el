@@ -4,6 +4,10 @@
 ;; No need to be stingy
 (setq ffip-limit 4096)
 
+(add-to-list 'ffip-patterns "*.json")
+(add-to-list 'ffip-patterns "*.scala")
+(add-to-list 'ffip-patterns "*")
+
 ;; Use full project path for ffip
 
 (defun ffip-project-files ()
@@ -56,6 +60,13 @@
                  "overlays"
                  "build"
                  "vendor"
-                 ".cask")))
+                 ".cask"
+		 ".git"
+		 ".idea"
+		 ".idea_modules"
+		 ".sass-cache"
+		 ".DS_Store")))
+
+
 
 (provide 'setup-ffip)
