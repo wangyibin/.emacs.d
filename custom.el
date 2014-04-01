@@ -12,6 +12,8 @@
  '(global-subword-mode t)
  '(ido-use-faces nil)
  '(indent-tabs-mode t)
+ '(jump-char-backward-key nil)
+ '(jump-char-forward-key nil)
  '(make-backup-files nil)
  '(save-place t nil (saveplace))
  '(standard-indent 2))

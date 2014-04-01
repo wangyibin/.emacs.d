@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("nwhome"
+ (filename . "~/Library/Application Support/yinote/")
+ (front-context-string . "18930878889\n  dr")
+ (rear-context-string . "38 Mar  4 22:54 ")
+ (position . 265))
+("key-bindings.el"
+ (filename . "~/.emacs.d/key-bindings.el")
+ (front-context-string . "(global-set-key ")
+ (rear-context-string . "ey (kbd \"C-o\"))\n")
+ (position . 5590))
+("nwkit"
+ (filename . "~/yinote/nwkit/app/scripts/sync/syncService.js")
+ (front-context-string . "_.pluck(localVer")
+ (rear-context-string . "nly = _.without(")
+ (position . 2250))
+)

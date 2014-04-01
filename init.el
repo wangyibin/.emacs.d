@@ -226,6 +226,14 @@ files are placed.
 ;; Setup key bindings
 (require 'key-bindings)
 
+;; Add parts of each file's directory to the buffer name if not unique
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
+(setq frame-title-format
+      '((:eval (if (buffer-file-name)
+                   (abbreviate-file-name (buffer-file-name))
+                 "%b"))))
 ;; Misc
 ;; (require 'project-archetypes)
 ;; (require 'my-misc)
@@ -251,3 +259,5 @@ files are placed.
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
+;; Add parts of each file's directory to the buffer name if not unique
+

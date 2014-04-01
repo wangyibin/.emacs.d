@@ -94,8 +94,11 @@
 ;; ;; iy-go-to-char - like f in Vim
 ;; (global-unset-key (kbd "C-f"))
 ;; (global-unset-key (kbd "C-b"))
-(global-set-key (kbd "C-c f") 'jump-char-forward)
-(global-set-key (kbd "C-c b") 'jump-char-backward)
+(global-set-key (kbd "C-'") 'jump-char-forward)
+(global-set-key (kbd "C-;") 'jump-char-backward)
+
+(global-set-key (kbd "C-.") 'switch-to-buffer)
+
 
 ;; (global-set-key (kbd "C-f") 'forward-char)
 ;; (global-set-key (kbd "C-b") 'backward-char)
@@ -140,6 +143,8 @@
 ;; (global-set-key (kbd "C-x M-w") 'copy-current-file-path)
 
 ;; Window switching
+
+
 
 ;; Find file in project
 (global-unset-key (kbd "C-o"))
