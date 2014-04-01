@@ -239,6 +239,8 @@ files are placed.
 ;; (require 'my-misc)
 (when is-mac (require 'mac))
 
+(require 'appearance)
+
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
 (add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t) (eldoc-mode 1)))
